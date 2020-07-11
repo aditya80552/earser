@@ -314,7 +314,7 @@ class SelfBot(discord.Client):
         self.update_event = update_event
         self.answer_scores = answer_scores
 
- #   async def on_ready(self):
+    async def on_ready(self):
         print("======================")
         print("Nelson Trivia Self Bot")
         print("Connected to discord.")
@@ -454,7 +454,7 @@ class Bot(discord.Client):
         await self.update_embeds()
 
         #await asyncio.sleep(5)
-       await self.change_presence(activity=discord.Activity(type=2,name="HQ Eraser"))
+       #await self.change_presence(activity=discord.Activity(type=2,name="HQ Eraser"))
        #await asyncio.sleep(5)
 
     async def on_message(self, message):
