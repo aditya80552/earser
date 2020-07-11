@@ -373,7 +373,7 @@ class Bot(discord.Client):
         self.answer_scores = answer_scores
 
         # embed creation
-        self.embed=discord.Embed(title="Trivia Plus", description="**Answer Choice**",color=0x98FB98)
+        self.embed=discord.Embed(title="Hidden", description="**Answer Choice**",color=0x98FB98)
         self.embed.set_author(name ='',url=' ',icon_url='')
         self.embed.add_field(name="Option I", value="0", inline=False)
         self.embed.add_field(name="Option II", value="0", inline=False)
@@ -505,7 +505,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('NzMxMzkwNjUzMzg0MjI4OTA0.XwlgUQ.rD4clXkvA7rKWxkH_HDyXjAM9b4'))
+    loop.create_task(bot.start('NzMxMzkwNjUzMzg0MjI4OTA0.XwlnKw.umz9zYXCBFTJ_AmffnE6BWb3mIg'))
     loop.run_forever()
 
 
