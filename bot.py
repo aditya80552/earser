@@ -408,7 +408,7 @@ class Bot(discord.Client):
         lst_scores = list(self.answer_scores)
 
         highest = max(lst_scores)
-#         lowest = min(lst_scores)
+        lowest = min(lst_scores)
         answer = lst_scores.index(highest)+1
         best_answer="Erasing:- <a:emoji_16:711647563446616155>"
         if highest >0:
@@ -453,9 +453,9 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
 
-        await asyncio.sleep(5)
-        await self.change_presence(activity=discord.Activity(type=2,name="HQ Eraser"))
-        await asyncio.sleep(5)
+        #await asyncio.sleep(5)
+       await self.change_presence(activity=discord.Activity(type=2,name="HQ Eraser"))
+       #await asyncio.sleep(5)
 
     async def on_message(self, message):
 
