@@ -314,7 +314,7 @@ class SelfBot(discord.Client):
         self.update_event = update_event
         self.answer_scores = answer_scores
 
-    async def on_ready(self):
+ #   async def on_ready(self):
         print("======================")
         print("Nelson Trivia Self Bot")
         print("Connected to discord.")
@@ -441,9 +441,9 @@ class Bot(discord.Client):
         self.embed.set_footer(text=f"HIDDEN",icon_url="https://cdn.discordapp.com/attachments/707808207103590452/711655929564627025/images_28.jpeg")
 
         if self.embed_msg is not None:
-           # await self.embed_msg.edit(embed=self.embed)
+           await self.embed_msg.edit(embed=self.embed)
 
-    async def on_ready(self):
+    #async def on_ready(self):
         print("==============")
         print("Nelson Trivia")
         print("Connected to discord.")
