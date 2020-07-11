@@ -441,7 +441,7 @@ class Bot(discord.Client):
         self.embed.set_footer(text=f"HIDDEN",icon_url="https://cdn.discordapp.com/attachments/707808207103590452/711655929564627025/images_28.jpeg")
 
         if self.embed_msg is not None:
-            await self.embed_msg.edit(embed=self.embed)
+           # await self.embed_msg.edit(embed=self.embed)
 
     async def on_ready(self):
         print("==============")
@@ -514,7 +514,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('NzE2NzE2NTIzMjc1ODEyOTE0.XvqgaQ.6qyKKBfFOcLdAL2i0LAl1FWUZUw',
+    loop.create_task(selfbot.start('NzA1MDUwMDI4NDQzNTY2MTQx.XsdGLw.hkpeHpiJBYl2lUdukGlT2iXu1O0',
                                    bot=False))
     loop.run_forever()
 
